@@ -517,7 +517,7 @@ article {
 - Visual 相关属性包括：`background` / `color` / `transition` / `list-style` 等
 
 另外，如果包含 `content` 属性，应放在最前面。
-
+[建议] 相关的属性声明按右边的顺序做分组处理，组之间需要有一个空行。
 
 示例：
 
