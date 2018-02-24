@@ -21,6 +21,7 @@
 　　[2.6 属性](#user-content-26-%E5%B1%9E%E6%80%A7)
   
    [2.7 空行](#user-content-27-%E7%A9%BA%E8%A1%8C)
+   
    [2.8 分号](#user-content-28-%E5%88%86%E5%8F%B7)
 
 [3 通用](#user-content-3-%E9%80%9A%E7%94%A8)
@@ -319,7 +320,8 @@ article[character='juliet'] {
         ...
     }
 }
-```css
+```
+
 
 ### 2.8 分号
 #### 每个属性声明末尾都要加分号。
@@ -331,8 +333,7 @@ article[character='juliet'] {
 
     background-color: red;
 }
-```css
-
+```
 
 ## 3 通用
 
