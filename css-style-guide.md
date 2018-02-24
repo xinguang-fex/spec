@@ -19,8 +19,9 @@
 　　[2.5 选择器](#user-content-25-%E9%80%89%E6%8B%A9%E5%99%A8)
 
 　　[2.6 属性](#user-content-26-%E5%B1%9E%E6%80%A7)
-    [2.7 属性](#user-content-27-%E7%A9%BA%E8%A1%8C)
 
+    [2.7 属性](#user-content-27-%E7%A9%BA%E8%A1%8C)
+    
 [3 通用](#user-content-3-%E9%80%9A%E7%94%A8)
 
 　　[3.1 选择器](#user-content-31-%E9%80%89%E6%8B%A9%E5%99%A8)
