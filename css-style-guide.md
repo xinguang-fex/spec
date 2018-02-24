@@ -25,6 +25,8 @@
    [2.8 分号](#user-content-28-%E5%88%86%E5%8F%B7)
    
    [2.9 注释](#user-content-29-%E6%B3%A8%E9%87%8A)
+   
+   [2.10 命名](#user-content-210-%E5%91%BD%E5%90%8D)
 
 [3 通用](#user-content-3-%E9%80%9A%E7%94%A8)
 
@@ -361,6 +363,40 @@ article[character='juliet'] {
     width: 50px;
 
     color: red; /* color red */
+}
+```
+### 2.10 命名
+- 类名使用小写字母，以中划线分隔
+- id采用驼峰式命名
+- scss中的变量、函数、混合、placeholder采用驼峰式命名
+
+```css
+/* class */
+.element-content {
+    ...
+}
+
+/* id */
+#myDialog {
+    ...
+}
+
+/* 变量 */
+$colorBlack: #000;
+
+/* 函数 */
+@function pxToRem($px) {
+    ...
+}
+
+/* 混合 */
+@mixin centerBlock {
+    ...
+}
+
+/* placeholder */
+%myDialog {
+    ...
 }
 ```
 
