@@ -46,7 +46,9 @@
 
 [8 模板中的 HTML](#user-content-8-%E6%A8%A1%E6%9D%BF%E4%B8%AD%E7%9A%84-html)
 
+[9 JS生成标签](#user-content-9-%e7%94%9f%e6%88%90%e6%a0%87%e7%ad%be-JS)
 
+[10 减少标签数量](#user-content-10-%e5%87%8f%e5%b0%91%e6%a0%87%e7%ad%be%e6%95%b0%e9%87%8f)
 
 
 
@@ -351,8 +353,24 @@ alert(document.getElementById('foo').tagName);
 ```html
 <ol data-ui-type="Select"></ol>
 ```
+#### 属性应该按照特定的顺序出现以保证易读性；
+- class
+- id
+- name
+- data-*
+- src, for, type, href, value , max-length, max, min, pattern
+- placeholder, title, alt
+- aria-*, role
+- required, readonly, disabled
+class是为高可复用组件设计的，所以应处在第一位；
 
+id更加具体且应该尽量少使用，所以将它放在第二位。
 
+#### boolean属性
+boolean属性指不需要声明取值的属性，XHTML需要每个属性声明取值，但是HTML5并不需要；
+
+更多内容可以参考 WhatWG section on boolean attributes(https://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes)
+boolean属性的存在表示取值为true，不存在则表示取值为false。
 
 ## 3 通用
 
@@ -837,6 +855,23 @@ viewport meta tag 可以设置可视区域的宽度和初始缩放大小，避�
 </table>
 ```
 
+## 9 JS生成标签
+#### 在JS文件中生成标签让内容变得更难查找，更难编辑，性能更差。应该尽量避免这种情况的出现。
+
+
+## 10 减少标签数量
+在编写HTML代码时，需要尽量避免多余的父节点；
+很多时候，需要通过迭代和重构来使HTML变得更少。
+
+```html
+<!-- Not well -->
+<span class="avatar">
+    <img src="...">
+</span>
+
+<!-- Better -->
+<img class="avatar" src="...">
+```
 
 
 
