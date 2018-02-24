@@ -20,7 +20,8 @@
 
 　　[2.6 属性](#user-content-26-%E5%B1%9E%E6%80%A7)
   
-  [2.7 属性](#user-content-27-%E7%A9%BA%E8%A1%8C)
+   [2.7 空行](#user-content-27-%E7%A9%BA%E8%A1%8C)
+   [2.8 分号](#user-content-28-%E5%88%86%E5%8F%B7)
 
 [3 通用](#user-content-3-%E9%80%9A%E7%94%A8)
 
@@ -294,13 +295,46 @@ article[character='juliet'] {
 > '}'后最好跟一个空行，包括scss中嵌套的规则
 > 属性之间需要适当的空行，具体见属性声明顺序
 
+```css
+/* not good */
+.element {
+    ...
+}
+.dialog {
+    color: red;
+    &:after {
+        ...
+    }
+}
 
+/* good */
+.element {
+    ...
+}
+
+.dialog {
+    color: red;
+
+    &:after {
+        ...
+    }
+}
+```css
+
+### 2.8 分号
+#### 每个属性声明末尾都要加分号。
+
+```css
+.element {
+    width: 20px;
+    height: 20px;
+
+    background-color: red;
+}
+```css
 
 
 ## 3 通用
-
-
-
 
 ### 3.1 选择器
 
