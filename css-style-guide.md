@@ -7,6 +7,7 @@
 [1 前言](#user-content-1-%E5%89%8D%E8%A8%80)
 
 [2 代码风格](#user-content-2-%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC)
+    [2.7 属性](#user-content-27-%E7%A9%BA%E8%A1%8C)
 
 　　[2.1 文件](#user-content-21-%E6%96%87%E4%BB%B6)
 
@@ -19,8 +20,6 @@
 　　[2.5 选择器](#user-content-25-%E9%80%89%E6%8B%A9%E5%99%A8)
 
 　　[2.6 属性](#user-content-26-%E5%B1%9E%E6%80%A7)
-
-    [2.7 属性](#user-content-27-%E7%A9%BA%E8%A1%8C)
 
 [3 通用](#user-content-3-%E9%80%9A%E7%94%A8)
 
