@@ -527,12 +527,14 @@ article {
     position: absolute;
     top: 50px;
     left: 0;
+    z-index: 1000;
     overflow-x: hidden;
 
     /* box model: sizes / margins / paddings / borders / ...  */
     width: 200px;
     padding: 5px;
     border: 1px solid #ddd;
+    border-radius: 3px;
 
     /* typographic: font / aligns / text styles / ... */
     font-size: 14px;
@@ -544,6 +546,8 @@ article {
     -webkit-transition: color 1s;
        -moz-transition: color 1s;
             transition: color 1s;
+            
+    opacity: 1;         
 }
 ```
 
