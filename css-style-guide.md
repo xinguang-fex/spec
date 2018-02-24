@@ -502,7 +502,12 @@ article {
     border: 1px solid #69c; /* introducing redundancy */
 }
 ```
+#### 常见的属性简写包括：
 
+- font
+- background
+- transition
+- animation
 
 ### 3.3 属性书写顺序
 
