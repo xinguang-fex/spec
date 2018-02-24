@@ -23,6 +23,8 @@
    [2.7 空行](#user-content-27-%E7%A9%BA%E8%A1%8C)
    
    [2.8 分号](#user-content-28-%E5%88%86%E5%8F%B7)
+   
+   [2.9 注释](#user-content-29-%E6%B3%A8%E9%87%8A)
 
 [3 通用](#user-content-3-%E9%80%9A%E7%94%A8)
 
@@ -332,6 +334,33 @@ article[character='juliet'] {
     height: 20px;
 
     background-color: red;
+}
+```
+
+### 2.9 注释
+#### 注释统一用'/* */'（scss中也不要用'//'），具体参照下面的写法；
+
+缩进与下一行代码保持一致；
+可位于一个代码行的末尾，与代码间隔一个空格。
+
+```css
+/* Modal header */
+.modal-header {
+    ...
+}
+
+/*
+ * Modal header
+ */
+.modal-header {
+    ...
+}
+
+.modal-header {
+    /* 50px */
+    width: 50px;
+
+    color: red; /* color red */
 }
 ```
 
