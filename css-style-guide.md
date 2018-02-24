@@ -80,7 +80,7 @@
 
 　　[8.3 Expression](#user-content-83-expression)
 
-
+[9 杂项](#user-content-9-%E6%9D%82%E9%A1%B9)
 
 
 
@@ -1176,6 +1176,54 @@ h1 {
 #### [强制] 禁止使用 `Expression`。
 
 
+## 9 杂项
 
+- 不允许有空的规则；
+
+- 元素选择器用小写字母；
+
+- 去掉小数点前面的0；
+
+- 去掉数字中不必要的小数点和末尾的0；
+
+- 属性值'0'后面不要加单位；
+
+- 同个属性不同前缀的写法需要在垂直方向保持对齐，具体参照下边的写法；
+```CSS
+/* not good */
+.element {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+    background: linear-gradient(to bottom, #fff 0, #eee 100%);
+    background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+    background: -moz-linear-gradient(top, #fff 0, #eee 100%);
+}
+
+/* good */
+.element {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+
+    background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+    background:    -moz-linear-gradient(top, #fff 0, #eee 100%);
+    background:         linear-gradient(to bottom, #fff 0, #eee 100%);
+}
+
+```
+
+- 无前缀的标准属性应该写在有前缀的属性后面；
+
+- 不要在同个规则里出现重复的属性，如果重复的属性是连续的则没关系；
+
+- 不要在一个文件里出现两个相同的规则；
+
+- 用 border: 0; 代替 border: none;；
+
+- 发布的代码中不要有 @import；
+
+- 尽量少用'*'选择器。
 
 
